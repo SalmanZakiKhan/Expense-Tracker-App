@@ -1,22 +1,26 @@
 import React from 'react'
 import Header from './components/Header'
-import AddTransaction from './components/AddTransaction'
 import TotalAmount from './components/TotalAmount'
 import TransactionList from "./components/TransactionList"
+import AddTransaction from './components/AddTransaction'
+import Balance from './components/Balance'
+import Expense from "./components/Expense"
+
 import { GlobalState } from "./context/GlobalState"
-import Transaction from './components/Transaction'
 import "./App.css"
 
 
 function App() {
     return (
       <GlobalState>
-           <Header />
         <div className="main-div">
+           <Header />
            <TotalAmount />
+           <Balance />
+           <Expense />
            <TransactionList />
            <AddTransaction />
-        </div>
+          </div>
       </GlobalState>
     )
 }

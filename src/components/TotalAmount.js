@@ -3,8 +3,9 @@ import { GlobalStateContext }from "../context/GlobalState"
 
 function TotalAmount() {
 
-    const {state} = useContext(GlobalStateContext);
-    const amount = state.transactions.map(transaction => transaction.price).reduce((accumulator,currentValue) => accumulator + currentValue, 0);
+    const {transactions} = useContext(GlobalStateContext);
+    const amount = transactions.map(transaction => +(transaction.price)).reduce((accumulator,currentValue) => accumulator + currentValue, +(0));
+    console.log(amount);
     return (
         <div>
             <h1>YOUR NET WORTH : $ {amount}</h1>
