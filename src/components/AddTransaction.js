@@ -29,11 +29,11 @@ function AddTransaction() {
     
     return (
         <form onSubmit={(e) => handleSubmit(e)}>
-            <label>ADD TRANSACTION : </label><br />
-            <input type="text" value={current.name} name="name" onChange={(e) => onChangeHandler(e)}/><br /><br />
+            <label>ENTER TRANSACTION : </label><br />
+            <input type="text" value={current.name} name="name" placeholder="Enter Transaction..." onChange={(e) => onChangeHandler(e)}/><br /><br />
             <label>ENTER AMOUNT : (in + or -) </label><br />
-            <input type="number"  value={current.price} name="price" onChange={(e) => onChangeHandler(e)}/><br /> <br />
-            <button type="submit"><span>enter transaction</span></button>
+            <input type="number"  value={current.price} name="price" placeholder="Enter amount in digits..." onChange={(e) => onChangeHandler(e)}/><br /> <br />
+            <button type="submit"><span>add transaction</span></button>
         </form>
     );
 }

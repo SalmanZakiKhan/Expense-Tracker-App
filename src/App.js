@@ -12,7 +12,8 @@ import "./App.css"
 
 function App() {
     return (
-      <GlobalState>
+      <div className="root-div">
+          <GlobalState>
         <div className="main-div">
            <Header />
            <TotalAmount />
@@ -20,10 +21,11 @@ function App() {
              <Balance />
              <Expense />
            </div>
-           <TransactionList />
+           {/* <TransactionList /> */}
            <AddTransaction />
           </div>
       </GlobalState>
+      </div>
     )
 }
 

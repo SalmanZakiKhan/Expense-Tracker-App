@@ -8,8 +8,8 @@ function Expense() {
     .reduce((accumulator,currentValue) => accumulator + currentValue , +(0));
     return (
         <div className="expense-div">
-            <h5>YOUR EXPENSE : </h5>
-            <span>${finalValue}</span>
+            <span><b>EXPENSES :</b></span> <br /><br />
+            <span className="calculatedvalues"><strong>$</strong>{Math.abs(finalValue)}</span>
         </div>
     )
 }

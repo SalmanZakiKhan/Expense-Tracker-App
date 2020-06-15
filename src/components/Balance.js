@@ -9,8 +9,9 @@ function Balance() {
     
     return (
         <div className="balance-div">
-            {finalValue}
-        </div>
+        <span> <b>PROFIT : </b></span> <br /><br />
+        <span className="calculatedvalues1"><strong>$</strong>{finalValue}</span>
+    </div>
     )
 }
 

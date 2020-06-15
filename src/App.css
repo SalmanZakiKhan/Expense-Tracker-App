@@ -1,42 +1,51 @@
+.root-div {
+  background-color: whitesmoke;
+  margin: 0px;
+}
+
 .main-div {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 20px;
 }
 
 h1 {
-    color: burlywood;
+    color: black;
 }
 
 .sub-div {
     display: flex;
     flex-direction: row;
+    margin-top: 20px;
 }
 
 .balance-div {
-  width: 140px;
+  width: 180px;
   height: 67px;
-  border: 5px solid darkcyan;
+  border: 1px solid black;
+  background-color: white;
+  border-bottom: 5px solid green;
 
 }
 
-
 .expense-div {
-    width: 140px;
+    width: 180px;
     height: 67px;
-    border: 5px solid violet;
-    margin-left: 5px;
+    border: 1px solid black;
+    background-color: white;
+    border-bottom: 5px solid red;
+    border-left: 2px solid black;
   }
 
 ul {
     list-style-type: none;
+    border: 1px solid blue;
 }
 
 ul > li {
     color: burlywood;
-    padding-left: auto 10px;
-    border: 5px solid black;
-    padding: 0px 60px;
+    border: 5px solid red;
 }
 
 li > span {
@@ -52,17 +61,21 @@ li > strong {
   text-align: end;
 }
 
+form {
+  margin-top: 30px;
+  padding-bottom: 240px;
+}
+
 input[type="text"], input[type="number"] {
   width: 350px;
   border-radius: 5px;
   margin-top: 10px;
-  height: 25px;
+  height: 30px;
 }
 
 button[type="submit"] {
     width: 360px;
-    border-radius: 5px;
-    background-color: yellowgreen;
+    background-color: plum;
     height: 40px;
     margin-top: 10px;
 }
@@ -71,6 +84,7 @@ label {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 20px;
+    font-style: oblique;
 }
 
 button span {
@@ -78,4 +92,26 @@ button span {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-weight: bold;
+}
+
+.calculatedvalues {
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 5px;
+    color: red;
+}
+
+.calculatedvalues1 {
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 5px;
+    color: green;
+}
+span b {
+    color: blue;
+    padding-left: 3px;
+}
+
+span strong {
+    margin-right: 2px;
 }
