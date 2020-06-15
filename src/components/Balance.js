@@ -8,7 +8,7 @@ function Balance() {
     .reduce((accumulator,currentValue) => accumulator + currentValue ,+(0));
     
     return (
-        <div>
+        <div className="balance-div">
             {finalValue}
         </div>
     )

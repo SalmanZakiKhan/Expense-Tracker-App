@@ -13,7 +13,7 @@ function AddTransaction() {
     const [current,setCurrent] = useState(initialState);
 
     const onChangeHandler = (e) => {
-        const {name,value} = e.target;
+        const { name,value } = e.target;
         setCurrent({
             ...current,
             [name]:value
@@ -23,7 +23,6 @@ function AddTransaction() {
     const handleSubmit = (e) => {
       e.preventDefault();
       current.id = transactions.length + 1;
-      console.log(current);
       addTransaction(current);
       setCurrent(initialState);
     }
@@ -32,9 +31,9 @@ function AddTransaction() {
         <form onSubmit={(e) => handleSubmit(e)}>
             <label>ADD TRANSACTION : </label><br />
             <input type="text" value={current.name} name="name" onChange={(e) => onChangeHandler(e)}/><br /><br />
-            <label>ENTER AMOUNT : </label><br />
+            <label>ENTER AMOUNT : (in + or -) </label><br />
             <input type="number"  value={current.price} name="price" onChange={(e) => onChangeHandler(e)}/><br /> <br />
-            <button type="submit">SUBMIT</button>
+            <button type="submit"><span>enter transaction</span></button>
         </form>
     );
 }

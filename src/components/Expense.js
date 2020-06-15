@@ -7,8 +7,9 @@ function Expense() {
     .filter(number => number <= 0)
     .reduce((accumulator,currentValue) => accumulator + currentValue , +(0));
     return (
-        <div>
-            {finalValue}
+        <div className="expense-div">
+            <h5>YOUR EXPENSE : </h5>
+            <span>${finalValue}</span>
         </div>
     )
 }

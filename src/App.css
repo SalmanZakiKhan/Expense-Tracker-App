@@ -7,3 +7,75 @@
 h1 {
     color: burlywood;
 }
+
+.sub-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.balance-div {
+  width: 140px;
+  height: 67px;
+  border: 5px solid darkcyan;
+
+}
+
+
+.expense-div {
+    width: 140px;
+    height: 67px;
+    border: 5px solid violet;
+    margin-left: 5px;
+  }
+
+ul {
+    list-style-type: none;
+}
+
+ul > li {
+    color: burlywood;
+    padding-left: auto 10px;
+    border: 5px solid black;
+    padding: 0px 60px;
+}
+
+li > span {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+li > strong {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: end;
+}
+
+input[type="text"], input[type="number"] {
+  width: 350px;
+  border-radius: 5px;
+  margin-top: 10px;
+  height: 25px;
+}
+
+button[type="submit"] {
+    width: 360px;
+    border-radius: 5px;
+    background-color: yellowgreen;
+    height: 40px;
+    margin-top: 10px;
+}
+
+label {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+button span {
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
