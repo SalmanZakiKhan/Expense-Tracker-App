@@ -7,13 +7,17 @@ function TransactionList() {
     const {transactions} = useContext(GlobalStateContext);
     console.log(transactions);
     return (
-        <ul>
-            {
+        <div>
+           <h4>HISTORY</h4>
+           <div>
+           {
                transactions.map(transaction => (
                <Transaction key={transaction.id} transaction={transaction} />
                ))
             }
-        </ul>
+           </div>
+
+        </div>
     )
 }
 

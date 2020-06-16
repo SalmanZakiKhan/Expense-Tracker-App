@@ -13,7 +13,7 @@ const initialState = {
 export function GlobalState({children}) {
     const [state,dispatch] = useReducer(AppReducer,initialState);
 
-    const addTransaction = (transaction) => {
+    const addTransaction = transaction => {
        dispatch({
          type: 'ADD_TRANSACTION',
          payload: transaction

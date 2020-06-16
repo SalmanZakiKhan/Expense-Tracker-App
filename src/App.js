@@ -21,12 +21,12 @@ function App() {
              <Balance />
              <Expense />
            </div>
-           {/* <TransactionList /> */}
+           <TransactionList />
            <AddTransaction />
           </div>
       </GlobalState>
       </div>
-    )
+    );
 }
 
 export default App

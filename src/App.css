@@ -1,6 +1,5 @@
 .root-div {
   background-color: whitesmoke;
-  margin: 0px;
 }
 
 .main-div {
@@ -8,10 +7,6 @@
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
-}
-
-h1 {
-    color: black;
 }
 
 .sub-div {
@@ -37,28 +32,38 @@ h1 {
     border-bottom: 5px solid red;
     border-left: 2px solid black;
   }
+ 
+ h4 {
+    font-size: 20px;
+    font-style: oblique;
+  }
 
-ul {
-    list-style-type: none;
-    border: 1px solid blue;
-}
-
-ul > li {
-    color: burlywood;
-    border: 5px solid red;
+ li {
+    list-style: none;
+    color: black;
+    border: 1px solid black;
+    width: 360px;
+    height: 22px;
+    margin-bottom: 2px;
+    background-color: white;
 }
 
 li > span {
   text-transform: uppercase;
-  font-size: 20px;
-  font-weight: bold;
+  padding-left: 3px;
+  font-size: 18px;
 }
 
-li > strong {
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: end;
+li > span > b {
+    color: green;
+}
+
+.plus {
+    border-right: 5px solid green;
+}
+
+.minus {
+    border-right: 5px solid red;
 }
 
 form {
@@ -75,9 +80,11 @@ input[type="text"], input[type="number"] {
 
 button[type="submit"] {
     width: 360px;
-    background-color: plum;
+    background-color: rgb(226, 175, 224);
     height: 40px;
     margin-top: 10px;
+    border: 3px solid black;
+    font-style: oblique;
 }
 
 label {
@@ -112,6 +119,6 @@ span b {
     padding-left: 3px;
 }
 
-span strong {
-    margin-right: 2px;
-}
+/* .amount {
+
+} */

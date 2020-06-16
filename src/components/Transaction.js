@@ -1,13 +1,14 @@
 import React,{useContext} from 'react'
 import { GlobalStateContext }from "../context/GlobalState"
 
-function Transaction({transaction}) {
-    
-    const {DeleteTransaction} = useContext(GlobalStateContext);
+function Transaction({transaction : { name,price,id }}) {
+  
+    const {deleteTransaction} = useContext(GlobalStateContext);
+    // deleteTransaction(id);
     return (
-        <li>
-          <span>{transaction.name}</span>
-          <strong>{transaction.price}</strong>
+        <li className={ price > 0 ? "plus" : "minus" }>
+          <span className="">{name}</span>
+          <span className="amount"><b>$</b> {price}</span>
         </li>
     )
 }
