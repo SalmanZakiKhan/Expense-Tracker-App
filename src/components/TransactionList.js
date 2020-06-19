@@ -5,9 +5,10 @@ import Transaction from "./Transaction"
 function TransactionList() {
 
     const {transactions} = useContext(GlobalStateContext);
-    console.log(transactions);
+    
     return (
         <div>
+            <hr />
            <h4>HISTORY</h4>
            <div>
            {
